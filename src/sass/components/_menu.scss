@@ -1,0 +1,140 @@
+@import '../abstracts/variables';
+
+.game-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Outfit";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 155px 0px 0px 0px;
+
+  &__title {
+    display: flex;
+    column-gap: 10px;
+
+    img {
+      width: 40px;
+    }
+  }
+
+  &__choise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px 40px 0px;
+    width: 460px;
+    height: 205px;
+    border-radius: 15px;
+    background: $newGameMenu-bg;
+    box-shadow: 0px -8px 0px 0px #10212A inset;
+  }
+
+  &__text {
+    color: $newGameMenu-text;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 24px 0px 0px 0px;
+  }
+
+  &__text--primary {
+    color: $newGameMenu-text;
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 14px;
+    opacity: 0.5;
+    font-weight: 500;
+    letter-spacing: 0.875px;
+    padding: 17px 0px 0px 0px;
+  }
+
+  &__pick {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0px 0px 0px;
+    gap: 8px;
+    align-items: center;
+    width: 412px;
+    height: 72px;
+    border-radius: 10px;
+    background: $dark-bg;
+  }
+
+  &__item {
+    width: 198px;
+    height: 54px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: 0.2s;
+
+    img {
+      width: 30px;
+    }
+
+    &:hover {
+      background: rgba(168, 191, 201, 0.05);
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    &--choise-special {
+      width: 198px;
+      height: 54px;
+      background: rgba(168, 191, 201, 0.05);
+      transition: 0.2s;
+      border: none;
+		  border-radius: 10px;
+
+      img {
+        width: 30px;
+      }
+    }
+
+    &--choise {
+      width: 198px;
+      height: 54px;
+      background: transparent;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      transition: 0.2s;
+      background: rgba(168, 191, 201, 1);
+
+      img {
+        width: 30px;
+      }
+    }
+
+
+  }
+
+  &__btn {
+    width: 460px;
+    height: 67px;
+    border-radius: 15px;
+    background: #F2B137;
+    border: none;
+    outline: none;
+    box-shadow: 0px -8px 0px 0px #CC8B13 inset;
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--special {
+      background: #31C3BD;
+      margin: 20px 0px 0px 0px;
+      box-shadow: 0px -8px 0px 0px #118C87 inset;
+    }
+  }
+
+
+}
