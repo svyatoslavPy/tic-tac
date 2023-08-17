@@ -1,4 +1,4 @@
-import { X_PRIMARY, O_PRIMARY } from './index';
+import { X_PRIMARY, O_PRIMARY } from '../Menu/index';
 import { usePickPlayer } from '../../hooks/usePickPlayer';
 import O_SPECIAL from '../../images/icon-o-special.svg';
 

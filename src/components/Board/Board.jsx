@@ -1,4 +1,4 @@
-import { Square } from "./Square"
+import { Square } from "../Square/Square"
 import { GameStartInner } from "../../layouts/GameStartInnerLayout"
 import { useContext, useEffect, useMemo, useState } from "react"
 import { pickPlayerContext } from "../../сontext/pickPlayerContext"
